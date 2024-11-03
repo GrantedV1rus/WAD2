@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tinashe Sean Mungoshi">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Business Analysis, Business Intelligence">
+    <meta name="description" content="Skills page of Tinashe Sean Mungoshi's portfolio website.">
+
+    <title>Skills | Tinashe Sean Mungoshi</title>
+
+    <link rel="stylesheet" href="Assets/CSS/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="Assets/JS/main.js" defer></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="topnav" id="Topnav">
+        <button class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a class="topnavactive" href="skills.htm" aria-current="page">Skills</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-bg" preload="auto">
+        <source src="Assets/Videos/Halo BG 2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+        <h2 style="padding-bottom: 50px; text-shadow: 0 0 25px dodgerblue, 0 0 5px darkblue;">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="Assets/Images/html.png" alt="HTML5 proficiency icon">
+                <h3>HTML5</h3>
+                <p>Proficiency: 6.5/10</p>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/css.png" alt="CSS3 proficiency icon">
+                <h3>CSS3</h3>
+                <p>Proficiency: 5.5/10</p>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/java-script.png" alt="JavaScript proficiency icon">
+                <h3>JavaScript</h3>
+                <p>Proficiency: 2/10</p>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/python.png" alt="Python proficiency icon">
+                <h3>Python</h3>
+                <p>Proficiency: 3/10</p>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/power-bi-icon.webp" alt="Power BI proficiency icon">
+                <h3>Power BI</h3>
+                <p>Proficiency: 7/10</p>
+                <a href="Assets/Certificates/MRBIP.pdf" style="text-decoration: none;" target="_blank">
+                    <p style="color:gold; padding-top: 4px;" title="Click to view most recent BI project">Recent Project</p>
+                </a>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/excel.png" alt="Excel proficiency icon">
+                <h3>Microsoft Excel</h3>
+                <p>Proficiency: 7/10</p>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/PowerPoint.png" alt="PowerPoint proficiency icon">
+                <h3>Microsoft PowerPoint</h3>
+                <p>Proficiency: 8/10</p>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/Word.png" alt="Microsoft Word proficiency icon">
+                <h3>Microsoft Word</h3>
+                <p>Proficiency: 9/10</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="skills-section">
+        <h2 style="padding-bottom: 50px; text-shadow: 0 0 25px dodgerblue, 0 0 5px darkblue;">Certifications</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="Assets/Images/MS associate.png" alt="Microsoft Office Specialist Associate icon">
+                <h3>Microsoft Office Specialist: Associate</h3>
+                <a href="Assets/Certificates/Microsoft Office Specialist - Associate Certificate.pdf" style="text-decoration: none;" target="_blank">
+                    <p style="color: greenyellow; padding-top: 4px;" title="Click to view certificate">Certificate</p>
+                </a>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/MSW.png" alt="Microsoft Word Specialist icon">
+                <h3>Microsoft Office Specialist: Word Associate</h3>
+                <a href="Assets/Certificates/Microsoft Word Associate Certificate.pdf" style="text-decoration: none;" target="_blank">
+                    <p style="color: greenyellow; padding-top: 4px;" title="Click to view certificate">Certificate</p>
+                </a>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/MSE.png" alt="Microsoft Excel Specialist icon">
+                <h3>Microsoft Office Specialist: Excel Associate</h3>
+                <a href="Assets/Certificates/Microsoft Excel Associate Certificate.pdf" style="text-decoration: none;" target="_blank">
+                    <p style="color: greenyellow; padding-top: 4px;" title="Click to view certificate">Certificate</p>
+                </a>
+            </div>
+            <div class="skill-card">
+                <img src="Assets/Images/MSPP.png" alt="Microsoft PowerPoint Specialist icon">
+                <h3>Microsoft Office Specialist: PowerPoint Associate</h3>
+                <a href="Assets/Certificates/Microsoft PowerPoint Associate Certificate.pdf" style="text-decoration: none;" target="_blank">
+                    <p style="color: greenyellow; padding-top: 4px;" title="Click to view certificate">Certificate</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="skills.htm">Skills</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100090201882628" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/tinasheseanmungoshi/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.snapchat.com/add/tinashesean18" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+        </div>
+
+        <div class="copyright">
+            This website is property of Tinashe Sean Mungoshi.
+        </div>
+    </footer>
+</body>
+</html>

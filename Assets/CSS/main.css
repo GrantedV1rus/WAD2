@@ -1,0 +1,506 @@
+/* Navigation Menu */
+/* Default styles for the topnav */
+.topnav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    position: fixed;
+    box-shadow: 0 5px 10px 0px black;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+    transition: box-shadow 0.3s;
+    display: none; /* Hide the menu by default on smaller screens */
+}
+
+/* Style the list items */
+.topnav li {
+    float: left;
+}
+
+/* Style the links inside the list items */
+.topnav li a {
+    color: white;
+    opacity: 100%;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: large;
+}
+
+/* Change background color on hover */
+.topnav li a:hover:not(.topnavactive) {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Show the menu when the icon is clicked */
+.topnav.responsive ul {
+    display: block;
+}
+
+/* Style the hamburger icon */
+.topnav .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 600px) {
+    .topnav .icon {
+        display: none;
+    }
+
+    .topnav ul {
+        display: flex;
+    }
+
+    .topnav li {
+        float: none;
+    }
+}
+
+.topnavactive {
+    background-color: dodgerblue;
+}
+
+/* Main Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0%;
+    color: white;
+    text-align: center;
+    background-color: #333333;
+}
+
+
+/* Home Section Heading */
+.homeheading {
+    color: white;
+    text-shadow: 0 0 25px dodgerblue, 0 0 5px darkblue;
+    font-size: medium;
+    text-align: center;
+    padding: 100px 0 0 0;
+    margin: 0;
+}
+
+/* Main Name Title on Home Page */
+.homename {
+    color: white;
+    text-shadow: 0 0 25px dodgerblue, 0 0 5px darkblue;
+    font-size: 60px;
+    text-align: center;
+    padding: 200px 0 0 0;
+    margin: 0;
+    z-index: 1;
+}
+
+/* Home Page Intro Text */
+.homeintro {
+    color: white;
+    text-shadow: 0 0 25px dodgerblue, 0 0 5px darkblue;
+    font-size: x-large;
+    text-align: center;
+    padding: 30px 0 100px 0;
+    margin: 0;
+    z-index: 1;
+}
+
+
+/* Reset for Consistent Spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Video */
+.video-bg {
+    background-color: #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Places video behind content */
+    object-fit: cover;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content Area */
+main {
+    flex: 1;
+}
+
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Footer Navigation Links */
+.footer .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer .nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .nav-links a:hover {
+    color: dodgerblue;
+}
+
+/* Footer Social Icons */
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 24px;
+}
+
+.footer .social-icons a:hover {
+    color: dodgerblue;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* Image Flexbox Styling */
+.imageflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.imageflex img {
+    width: 350px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.imageflex p {
+    color: white;
+    text-shadow: 0 0 25px dodgerblue, 0 0 5px darkblue;
+    font-size: 1.1vw; /* Sets a responsive font size relative to the viewport width */
+    text-align: center;
+    padding-left: 0;
+    border-color: #333333;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .imageflex p {
+        font-size: 2vw; /* Slightly increase font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .imageflex p {
+        font-size: 2vw; /* Further increase font size for mobile devices */
+    }
+}
+
+/* Polaroid Image Effect */
+div.polaroid {
+    width: 350px;
+    box-shadow: 0px 4px 8px 0 black, 0 6px 20px 0 dodgerblue;
+    border-radius: 25px;
+    text-align: center;
+}
+
+div.containerp p {
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Animated Element - Goat Container */
+.goat-container {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.goat img {
+    width: 100px;
+    position: absolute;
+    animation: moveGoat 4s infinite alternate;
+    cursor: pointer;
+}
+
+.goat img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes moveGoat {
+    0% { left: 0; }
+    100% { left: 95%; }
+}
+
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 150px 20px 35px 20px;
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: #31587a;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 8px 0 black;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Contact Form Section */
+.contact-section {
+    text-align: center;
+    padding: 150px;
+}
+
+.contact-section h1 {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1em;
+    color: white;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100px;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.contact-form button:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerr {
+    display: flex;
+    max-width: 56.25em;
+    background-color: transparent;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.text-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.text-section p {
+    margin: 1em 0;
+    line-height: 1.6;
+    color: white;
+    font-size: large;
+    font-family: Arial, sans-serif;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Loader overlay styles */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Match video background color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 2000; /* Make sure it’s above all other content */
+}
+
+.loader-content {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fade-out effect for loader when hiding */
+.loader-hide {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.loader-content:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
