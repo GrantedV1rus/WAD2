@@ -6,7 +6,7 @@
     padding: 0%;
     overflow: hidden;
     position: fixed;
-    box-shadow: 0 5px 10px 0px black;
+   
     top: 0%;
     width: 100%;
     z-index: 1000;
@@ -100,6 +100,7 @@ body {
     padding: 200px 0 0 0;
     margin: 0;
     z-index: 1;
+    animation: bounceIn 1.5s ease-in-out;
 }
 
 /* Home Page Intro Text */
@@ -124,7 +125,7 @@ body {
 /* Background Video */
 .video-bg {
     background-color: #000;
-    position: fixed;
+    position:fixed;
     top: 50%;
     left: 50%;
     min-width: 100vw;
@@ -503,4 +504,21 @@ div.containerp p {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+/* Bounce-in animation */
+@keyframes bounceIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Apply animations */
+.topnav {
+    animation: slideIn 1s ease-out;
 }
